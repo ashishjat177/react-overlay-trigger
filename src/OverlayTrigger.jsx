@@ -3,8 +3,8 @@ import Overlay from './Overlay'
 import DomObserver from './DomObserver'
 import { combineRef } from './utils'
 
-const isPointerEventSupported = !!window.PointerEvent
-const isTouchEventSupported = !!window.TouchEvent
+const isPointerEventSupported = !!window?.PointerEvent
+const isTouchEventSupported = !!window?.TouchEvent
 
 const safeCall = (fn, ...args) => {
   if (typeof fn === 'function') {
